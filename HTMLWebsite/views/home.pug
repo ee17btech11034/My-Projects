@@ -1,0 +1,45 @@
+extends base.pug 
+
+block scripts 
+    script(src="/static/home.js") 
+
+block styles 
+    style 
+        include ../static/base.css 
+        include ../static/home.css 
+    
+block content      
+    section#introSection 
+        div Welcome to Dance Academy
+        div.small Here you can learn dances of different Indian states
+
+    section#MissionSection 
+        h3 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img
+                    img(src='/static/logo.jpg')
+                div.content 
+                    | You can learn dance here.
+        div.card 
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img
+                    img(src='/static/logo1.png')
+                div.content 
+                    | You can learn dance here.
+        div.card 
+            h3 Express yourself with dance
+            div.card-box 
+                div.card-img
+                    img(src='/static/logo0.jpg')
+                div.content 
+                    | You can learn dance here.
+    section#sponsorSection 
+        h3 Our Sponsors 
+        div.sponsors-img 
+            img(src="/static/Clogo1.png", alt="sponsor-img", class="img1")
+            img(src="/static/Clogo2.jpg", alt="sponsor-img", class="img1")
+            img(src="/static/Clogo3.jpg", alt="sponsor-img", class="img1")
+            img(src="/static/Clogo4.png", alt="sponsor-img", class="img1")

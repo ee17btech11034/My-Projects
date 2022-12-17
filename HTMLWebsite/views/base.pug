@@ -1,0 +1,21 @@
+doctype html 
+html 
+    head  
+        title Dance Academy 
+        block scripts 
+        block styles 
+    body 
+        nav#navbar 
+            ul 
+                div#logo 
+                    img(src="/static/logo2.png")
+                    | DA
+                li #[a(href='/') Home]
+                li #[a(href='/') About Us]
+                li #[a(href='/') Dances]
+                li #[a(href='/contact') Contact Us] 
+        
+        block content 
+        
+        footer#footer 
+            | Copyright 2022 ©  by Raj Dance Academy (DA)  | All rights reserved
